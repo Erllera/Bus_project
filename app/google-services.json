@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "579249647299",
+    "firebase_url": "https://ajar-project-e5789-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ajar-project-e5789",
+    "storage_bucket": "ajar-project-e5789.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579249647299:android:908e609800537f31e57c76",
+        "android_client_info": {
+          "package_name": "com.ksucta.ajar_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579249647299-4nnlb12ikjssva5nvg9bvpaojs3d768o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ksucta.ajar_project",
+            "certificate_hash": "c4766639a75c2be92ba4efab63a4a6f7241023a6"
+          }
+        },
+        {
+          "client_id": "579249647299-f9rdulpll2ifd0shje2t0v8osbsoq356.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtIMfWXD1-fcGpRkf9JdYjgugC-UwrB1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579249647299-f9rdulpll2ifd0shje2t0v8osbsoq356.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

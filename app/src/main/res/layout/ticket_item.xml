@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/namu_pro"
+        android:text="Билет создан 31-мая 2031 года"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#2A91FF"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ticket_bg"
+            android:gravity="center"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/textFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/uni_sans"
+                android:text="Бишкек"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textFrom"
+                android:layout_marginTop="@dimen/norm_dp"
+                android:fontFamily="@font/uni_sans"
+                android:text="Ош"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/textTo"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/namu_pro"
+                android:gravity="center"
+                android:text="Отправляемся\n 20-июня"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="111dp"
+                android:layout_toEndOf="@id/textTime"
+                android:fontFamily="@font/uni_sans"
+                android:text="Инфо о водителе:"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/driverTextInfo"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="135dp"
+                android:layout_toEndOf="@id/textTime"
+                android:fontFamily="@font/namu_pro"
+                android:gravity="center"
+                android:text="Жыргалбек уулу Эрлан. Год рождения: 31.10.2000. Родом из Оша"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+
+            <TextView
+                android:id="@+id/textNumber"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textTime"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/uni_sans"
+                android:gravity="center"
+                android:text="+996-222-36-66-00"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/ticketCar"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="50dp"
+                android:layout_toEndOf="@id/textFrom"
+                android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/bus_json" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

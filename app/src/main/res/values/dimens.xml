@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="norm_dp">28dp</dimen>
+    <dimen name="min_dp">12dp</dimen>
+    <dimen name="max_dp">64dp</dimen>
+</resources>
